@@ -1,3 +1,7 @@
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile4`, function (sprite, location) {
+    mySprite.setPosition(13, 250)
+    tiles.setCurrentTilemap(tilemap`level4`)
+})
 scene.onOverlapTile(SpriteKind.Player, sprites.jewels.jewel1, function (sprite, location) {
     for (let index = 0; index < 10000; index++) {
         tiles.setCurrentTilemap(tilemap`level2`)
